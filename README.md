@@ -1,6 +1,6 @@
 <a name="top"></a>
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/devvicha/devvicha/main/assets/header-dark.svg">
   <img alt="Vichaksha Geekiyanage, AI/ML Engineer working on voice AI and computer vision. I build voice agents that speak Sinhala, Tamil and English, WhatsApp AI agents serving 10K+ customers a day, vision systems that measure garments, and ML pipelines that keep retraining themselves." src="assets/header-light.svg" width="100%">
 </picture>
 
@@ -53,12 +53,12 @@
 <sub>Click a card to jump to its story. Every story has a collapsible deep dive.</sub>
 
 <p align="center">
-<a href="#whatsapp"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/whatsapp-dark.svg"><img alt="Production WhatsApp AI Agents: idempotent ingestion, SQL audit trails, human takeover and LLM monitoring, serving 10K+ customers every day" src="assets/cards/whatsapp-light.svg" width="49%"></picture></a>
-<a href="#asr"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/asr-dark.svg"><img alt="Sinhala Lyrical ASR: Whisper large v2 with LoRA for Sinhala songs, 15.7M trainable parameters" src="assets/cards/asr-light.svg" width="49%"></picture></a>
-<a href="#garment"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/garment-dark.svg"><img alt="Garment Measurement: pose keypoints and ChArUco calibration with an 18 keypoint skeleton" src="assets/cards/garment-light.svg" width="49%"></picture></a>
-<a href="#voice"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/voice-dark.svg"><img alt="Multilingual Voice Agents in Sinhala, Tamil and English" src="assets/cards/voice-light.svg" width="49%"></picture></a>
-<a href="#smartdesk"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/smartdesk-dark.svg"><img alt="Smart Desk Assistant: ESP32-S3 node to MQTT, backend, mobile app and AI insights" src="assets/cards/smartdesk-light.svg" width="49%"></picture></a>
-<a href="#hrms"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/hrms-dark.svg"><img alt="SmartForce HRMS: 10 Spring Boot microservices" src="assets/cards/hrms-light.svg" width="49%"></picture></a>
+<a href="#whatsapp"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/devvicha/devvicha/main/assets/cards/whatsapp-dark.svg"><img alt="Production WhatsApp AI Agents: idempotent ingestion, SQL audit trails, human takeover and LLM monitoring, serving 10K+ customers every day" src="assets/cards/whatsapp-light.svg" width="49%"></picture></a>
+<a href="#asr"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/devvicha/devvicha/main/assets/cards/asr-dark.svg"><img alt="Sinhala Lyrical ASR: Whisper large v2 with LoRA for Sinhala songs, 15.7M trainable parameters" src="assets/cards/asr-light.svg" width="49%"></picture></a>
+<a href="#garment"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/devvicha/devvicha/main/assets/cards/garment-dark.svg"><img alt="Garment Measurement: pose keypoints and ChArUco calibration with an 18 keypoint skeleton" src="assets/cards/garment-light.svg" width="49%"></picture></a>
+<a href="#voice"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/devvicha/devvicha/main/assets/cards/voice-dark.svg"><img alt="Multilingual Voice Agents in Sinhala, Tamil and English" src="assets/cards/voice-light.svg" width="49%"></picture></a>
+<a href="#smartdesk"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/devvicha/devvicha/main/assets/cards/smartdesk-dark.svg"><img alt="Smart Desk Assistant: ESP32-S3 node to MQTT, backend, mobile app and AI insights" src="assets/cards/smartdesk-light.svg" width="49%"></picture></a>
+<a href="#hrms"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/devvicha/devvicha/main/assets/cards/hrms-dark.svg"><img alt="SmartForce HRMS: 10 Spring Boot microservices" src="assets/cards/hrms-light.svg" width="49%"></picture></a>
 </p>
 
 ---
@@ -193,7 +193,7 @@ flowchart TD
 Speech models struggle with Sinhala songs: background music, poetic phrasing and stretched pronunciation all get in the way. I adapted Whisper to transcribe lyrics well enough to search and match them for copyright detection. The curve below is plotted straight from the training log in the repo.
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/whisper-loss-dark.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/devvicha/devvicha/main/assets/whisper-loss-dark.svg">
   <img alt="Training loss of Whisper large v2 with LoRA on Sinhala song audio, falling from 2.17 to 0.12 over 20,244 steps and 3 epochs" src="assets/whisper-loss-light.svg" width="100%">
 </picture>
 
@@ -354,7 +354,7 @@ An HR platform split into 10 independent Spring Boot services backed by MongoDB:
 ## 📈 Journey
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/journey-dark.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/devvicha/devvicha/main/assets/journey-dark.svg">
   <img alt="Journey. 2020 to 2022: A/L Physical Science at Nalanda College, People's Bank teller and admin, speaker on ML and automation. 2023: easyPark IoT parking, sign language detection, AIESEC team lead. 2024: IEEE IES Secretary at University of Kelaniya, Robot Battle coordinator, Sinhala ASR research starts. 2025: joined Surge Robotics as Associate AI/ML Engineer, voice and WhatsApp agents. 2026: production WhatsApp AI agents, SICET 2026 paper, IEEE GenAI Challenge talk, BSc (Hons) completed." src="assets/journey-light.svg" width="100%">
 </picture>
 

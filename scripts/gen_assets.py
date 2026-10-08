@@ -282,27 +282,27 @@ JOURNEY = [
 
 def journey(theme):
     t = THEMES[theme]
-    W, H = 1000, 230
+    W, H = 1000, 250
     xs = [110 + i * 195 for i in range(len(JOURNEY))]
-    ly = 74
+    ly = 86
     cols = []
     for i, ((year, lines), x) in enumerate(zip(JOURNEY, xs)):
         last = i == len(JOURNEY) - 1
         col = t["gold"] if last else t["teal"]
         texts = "".join(
-            f'<text class="{"ev strong" if j == 0 else "ev"}" x="{x}" y="{118 + j * 22}" text-anchor="middle">{escape(l)}</text>'
+            f'<text class="{"ev strong" if j == 0 else "ev"}" x="{x}" y="{ly + 44 + j * 22}" text-anchor="middle">{escape(l)}</text>'
             for j, l in enumerate(lines)
         )
         pulse = f'<circle class="pulse" cx="{x}" cy="{ly}" r="7" fill="{col}"/>' if last else ""
         cols.append(
             f'<g class="fade" style="animation-delay:{0.25 + i * 0.3:.2f}s">'
             f'<text class="year" x="{x}" y="{ly - 22}" text-anchor="middle" fill="{col}">{escape(year)}</text>'
-            f'{pulse}<circle cx="{x}" cy="{ly}" r="7" fill="{t["bg"]}" stroke="{col}" stroke-width="3"/>'
+            f'{pulse}<circle cx="{x}" cy="{ly}" r="7" fill="{t["panel"]}" stroke="{col}" stroke-width="3"/>'
             f'<circle cx="{x}" cy="{ly}" r="2.6" fill="{col}"/>{texts}</g>'
         )
     alt = "Journey: " + " | ".join(f"{y}: {', '.join(l)}" for y, l in JOURNEY)
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="{escape(alt)}">
-<defs><linearGradient id="ln" x1="0" x2="1"><stop offset="0" stop-color="{t["teal"]}" stop-opacity="0.35"/><stop offset="0.8" stop-color="{t["teal"]}"/><stop offset="1" stop-color="{t["gold"]}"/></linearGradient></defs>
+<defs><linearGradient id="ln" gradientUnits="userSpaceOnUse" x1="40" y1="0" x2="960" y2="0"><stop offset="0" stop-color="{t["teal"]}" stop-opacity="0.35"/><stop offset="0.8" stop-color="{t["teal"]}"/><stop offset="1" stop-color="{t["gold"]}"/></linearGradient></defs>
 <style>
   .year{{font-family:{MONO};font-size:15px;font-weight:700;letter-spacing:1px}}
   .ev{{font-family:{SANS};font-size:13.5px;fill:{t["muted"]}}}
@@ -315,6 +315,7 @@ def journey(theme):
   @keyframes pulse{{0%{{transform:scale(1);opacity:.6}}100%{{transform:scale(2.6);opacity:0}}}}
   @media (prefers-reduced-motion: reduce){{*{{animation:none!important}} .fade{{opacity:1}} .draw{{stroke-dashoffset:0}}}}
 </style>
+<rect x="0.5" y="0.5" width="{W - 1}" height="{H - 1}" rx="14" fill="{t["panel"]}" stroke="{t["border"]}"/>
 <path class="draw" pathLength="1" d="M40 {ly} H960" stroke="url(#ln)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
 {"".join(cols)}
 </svg>
