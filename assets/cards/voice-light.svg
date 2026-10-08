@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="256" viewBox="0 0 480 256" role="img" aria-label="Multilingual Voice Agents: Booking and banking agents that talk in Sinhala, Tamil and English, with RAG, tool calls and self healing streams. 3 languages: Sinhala · Tamil · English.">
+<defs>
+  <clipPath id="c"><rect x="0.5" y="0.5" width="479" height="255" rx="14"/></clipPath>
+  <linearGradient id="bar" x1="0" x2="1"><stop offset="0" stop-color="#B45309"/><stop offset="1" stop-color="#0F766E" stop-opacity="0.15"/></linearGradient>
+  <radialGradient id="glow" cx="100%" cy="0%" r="70%"><stop offset="0" stop-color="#B45309" stop-opacity="0.08"/><stop offset="1" stop-color="#B45309" stop-opacity="0"/></radialGradient>
+</defs>
+<style>
+  .eye{font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace;font-size:11.5px;font-weight:600;letter-spacing:1.6px;fill:#B45309}
+  .title{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif;font-size:25px;font-weight:700;fill:#1f2328}
+  .desc{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif;font-size:14.5px;fill:#59636e}
+  .metric{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif;font-size:32px;font-weight:800;fill:#B45309}
+  .label{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif;font-size:13px;fill:#59636e}
+  .chip{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif;font-size:12px;font-weight:600;fill:#1f2328}
+  .arrow{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif;font-size:20px;fill:#59636e;animation:nudge 2.4s ease-in-out infinite}
+  @keyframes nudge{0%,70%,100%{transform:translate(0,0)}85%{transform:translate(2px,-2px)}}
+  .pulse{transform-box:fill-box;transform-origin:center;animation:pulse 1.8s ease-out infinite}
+  @keyframes pulse{0%{transform:scale(1);opacity:.7}100%{transform:scale(3.2);opacity:0}}
+  .sweep{animation:sweep 3.5s ease-in-out infinite}
+  @keyframes sweep{0%{transform:translateX(-140px)}60%,100%{transform:translateX(500px)}}
+  @media (prefers-reduced-motion: reduce){*{animation:none!important}}
+</style>
+<g clip-path="url(#c)">
+  <rect width="480" height="256" fill="#f6f8fa"/>
+  <rect width="480" height="256" fill="url(#glow)"/>
+  <rect width="480" height="4" fill="url(#bar)"/>
+  <rect class="sweep" width="120" height="4" fill="#B45309" opacity="0.55"/>
+</g>
+<rect x="0.5" y="0.5" width="479" height="255" rx="14" fill="none" stroke="#d1d9e0"/>
+<text class="eye" x="28" y="44">VOICE AI · REALTIME</text>
+<text class="arrow" x="454" y="47" text-anchor="end">↗</text>
+<text class="title" x="28" y="80">Multilingual Voice Agents</text>
+<text class="desc" x="28" y="110">Booking and banking agents that talk in Sinhala, Tamil and</text><text class="desc" x="28" y="131">English, with RAG, tool calls and self healing streams.</text>
+<text class="metric" x="28" y="178">3</text>
+<text class="label" x="60.5" y="172">languages: Sinhala · Tamil · English</text>
+<rect x="28.0" y="206" width="85.8" height="24" rx="12" fill="#eef1f4" stroke="#d1d9e0"/><text class="chip" x="70.9" y="222" text-anchor="middle">Gemini Live</text><rect x="120.8" y="206" width="53.6" height="24" rx="12" fill="#eef1f4" stroke="#d1d9e0"/><text class="chip" x="147.6" y="222" text-anchor="middle">React</text><rect x="181.4" y="206" width="63.7" height="24" rx="12" fill="#eef1f4" stroke="#d1d9e0"/><text class="chip" x="213.2" y="222" text-anchor="middle">Node.js</text><rect x="252.0" y="206" width="89.8" height="24" rx="12" fill="#eef1f4" stroke="#d1d9e0"/><text class="chip" x="297.0" y="222" text-anchor="middle">WebSockets</text><rect x="348.9" y="206" width="58.4" height="24" rx="12" fill="#eef1f4" stroke="#d1d9e0"/><text class="chip" x="378.1" y="222" text-anchor="middle">FAISS</text>
+</svg>
